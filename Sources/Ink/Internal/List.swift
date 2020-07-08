@@ -172,7 +172,7 @@ private extension List {
                   modifiers: ModifierCollection) -> String {
             let textHTML = text.html(usingURLs: urls, modifiers: modifiers)
             let listHTML = nestedList?.html(usingURLs: urls, modifiers: modifiers)
-            return "<li>\(textHTML)\(listHTML ?? "")</li>"
+            return "<br/><li>\(textHTML)\(listHTML ?? "")</li><br/>"
         }
     }
 
